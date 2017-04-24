@@ -1,0 +1,40 @@
+
+
+.wrapper{
+	position: relative;
+}
+
+.wrapper-main{
+	position: relative;
+	min-height: 350px;
+	background: url("../images/fondomural.jpg");
+	color: #F0F0F0
+}
+
+.wrapper-form{
+	position: relative;
+	min-height: 250px;	
+	background-color: #0175BB;
+	color: #FFF
+}
+
+.main-image{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.footer-wrapper{
+	position: relative;
+	min-height: 150px;
+	background-color: #222;
+	color: #F0F0F0
+}
+.footer-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

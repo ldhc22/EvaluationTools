@@ -1,0 +1,125 @@
+
+
+<div class="row" >
+    
+<h1>Net Present Value</h1>
+    
+ 
+    
+    <table align="center">
+        <tr>
+            
+              <td><label>Outflow</label></td>
+            <td><input id="outflow_npv"type="number" class="form-control" placeholder="0.0"></td>
+            
+              <td><label>Inflow</label></td>
+            <td><input id="inflow_npv"type="number" class="form-control" placeholder="0.0"></td>
+            
+            
+            <td><label>Periodos</label></td>
+            <td>
+                 <button  type="button" class="btn btn-default" id="addElement" onclick="addNew_npv();">
+                                    Maximo 10 Periodos
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                  </button>
+            </td>
+        
+        </tr>
+        <tr>
+            
+             <td><label>Principal</label></td>
+            <td><input id="principal_npv" type="number" class="form-control" placeholder="0.0"></td>
+            
+             <td><label>Salvage Value</label></td>
+            <td><input id="salvage_npv" type="number" class="form-control" placeholder="0.0"></td>
+            
+            
+            
+            
+             <td>
+      
+                <div class="form-group">
+                  <label for="sel1">Period of Salvage Value:</label>
+                  <select class="form-control" id="periodo_s">
+                     <option>0</option>
+                      <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                     <option>5</option>
+                      <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                     <option>10</option>
+                    
+                  </select>
+                </div>
+                 
+                 
+            </td>
+     
+            
+            
+        </tr>
+        
+        
+        <tr>
+            <td><label>Tax Rate(%)</label></td>
+            <td><input id="tax_r_npv"type="number" class="form-control" placeholder="0.0"></td>
+            
+           
+             <td><label>Tasa de Interes (%)</label></td>
+            <td><input id="tasa_i_npv"type="number" class="form-control" placeholder="0.0"></td>
+            
+        </tr>
+        
+        <tr>
+             <td>
+                <button  type="submit" class="btn btn-default" name="submit" onclick="calcular_npv();">
+                            CALCULAR
+                        <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                </button>
+            </td>
+                <td >
+                <button  type="submit" class="btn btn-default" name="submit">
+                           Generar Resultado
+                        <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                </button>
+            </td>
+            
+               <td>
+                <button  type="submit" class="btn btn-default" name="submit" onclick="reset();">
+                           Reset
+                        <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+        
+        
+    
+    </table>
+
+    <hr width="80%">
+    
+    
+    <div class="table-responsive">
+        <table id="myTable_npv" class="table-striped" align="center" >
+            <tr>
+                <th>Periodo</th>
+                <th>Outflow</th>
+                <th>Inflow</th>
+                <th>Net Cash Flow</th>
+                <th>Cumulative Cash Flow</th>
+               
+                
+            </tr>
+          
+        </table>
+    </div>
+    
+    
+</div>
+
+<!--mis javascripts-->
+    <script src="js/funciones.js"></script>
